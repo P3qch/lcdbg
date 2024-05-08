@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-ggdb",
+      "-Iheaders",
+      "-o",
+      "objects/main.o",
+      "sources/main.cpp"
+    ],
+    "directory": "/home/p3qch/projects/lcdbg",
+    "file": "/home/p3qch/projects/lcdbg/sources/main.cpp",
+    "output": "/home/p3qch/projects/lcdbg/objects/main.o"
+  }
+]
