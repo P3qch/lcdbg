@@ -1,8 +1,8 @@
 #pragma once
-#include <sys/user.h>
 #ifndef _H_PTRACE
 #define _H_PTRACE
 
+#include <sys/user.h>
 #include <sys/ptrace.h>
 #include <cstdint>
 #include <unistd.h>
