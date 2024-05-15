@@ -41,6 +41,14 @@ void ptrace_cont(pid_t pid)
     }
 }
 
+void ptrace_singlestep(pid_t pid)
+{
+    if (ptrace(PTRACE_SINGLESTEP, pid, 0, 0))
+    {
+        throw PtraceExcpetion();
+    }
+}
+
 user_regs_struct ptrace_getregs(pid_t pid)
 {
     user_regs_struct regs;
