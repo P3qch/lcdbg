@@ -19,6 +19,7 @@ class ParsedElf
     void parseSegments();
 public:
     ParsedElf(char* path);
+    ~ParsedElf();
     int getBitness() const;
     const Elf64_Ehdr* getEhdr() const;
     const Elf64_Phdr* getSegments() const;

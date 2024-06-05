@@ -1,4 +1,5 @@
 #include "parsed_elf.hpp"
+#include <cstddef>
 #include <elf.h>
 #include <cstring>
 
@@ -8,6 +9,12 @@ ParsedElf::ParsedElf(char* path)
     parseEhdr();
     parseSections();
     parseSegments();
+}
+
+ParsedElf::~ParsedElf()
+{
+    fclose(_f);
+    _f = NULL;
 }
 
 void ParsedElf::parseEhdr()
